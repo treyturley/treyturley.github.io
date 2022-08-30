@@ -47,6 +47,11 @@ body {
     padding-right: 15px;
 }
 
+#main{
+    width: 40%;
+    float: none;
+}
+
 #main-footer{
     background: #333;
     color: #fff;

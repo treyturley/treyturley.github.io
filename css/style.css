@@ -14,6 +14,11 @@ body {
     overflow: hidden;
 }
 
+/* used to clear a float. place after content that has been floated */
+.clr{
+    clear: both;
+}
+
 #main-header{
     background-color: #777;
     color: white;
@@ -23,7 +28,7 @@ body {
 #navbar{
     background-color: #333;
     color: white;
-    height: 50px;
+    /* height: 50px; */
 }
 
 #navbar ul{

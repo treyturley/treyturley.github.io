@@ -1,9 +1,10 @@
-#yahtzee-main{
+p{
     width: 60%;
 }
 
-#skullking-main{
-    width:60%;
+.figure-inline{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .link-block{
@@ -12,17 +13,13 @@
 
 @media(max-width:600px){
 
-    #yahtzee-main{
+    p{
         width: 100%;
-    }
-    
-    #skullking-main{
-        width:100%;
     }
 
     img{
         max-height: 550px;
-        
-        object-fit: fill;
+        max-width: 390px;
+        object-fit: contain;
     }
 }

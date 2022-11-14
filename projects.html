@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Trey Turley - Projects</title>
     <meta charset="UTF-8">
@@ -9,14 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
-
 <body>
     <header id="main-header">
         <div class="container">
             <h1>Trey Turley</h1>
         </div>
     </header>
-
     <nav id="navbar">
         <div class="container">
             <ul>
@@ -24,18 +21,18 @@
                 <!-- <li><a href="/about.html">About</a></li> -->
                 <li><a href="/projects.html">Projects</a></li>
                 <li><a href="/yahtzee-scorecard/">Yahtzee</a></li>
-                <li><a href="/skullking-scorecard">Skull King</a></li>
+                <li><a href="/skullking-scorecard">SkullKing</a></li>
                 <li><a href="/fse-job-finder">FSE Job Finder</a></li>
             </ul>
         </div>
     </nav>
-
     <div class="container">
         <h1>Projects</h1>
         <p>
-            The first two projects are scorecards that can be used while playing Yahtzee and Skull King. Details on
-            how each work and links to the scorecards can be found below.
+            Below you will find a brief description of each project along with links to the source code. 
+            Above the screenshots are links that will take you to the applications so you can try them out.
         </p>
+        <h3>Jump To</h3>        
         <a class="link-block" href="#yahtzee-main">Yahtzee Scorecard</a>
         <a class="link-block" href="#skullking-main">Skull King Scorecard</a>
         <a class="link-block" href="#fsejobfinder-main">FSE Job Finder</a>
@@ -43,10 +40,8 @@
         <section id="yahtzee-main">
             <h2>Yahtzee Scorecard</h2>
             <p>
-                This is a digital version of the scoresheet that each player uses to keep track of their
-                score while palying Yahtzee. The scorecard automates the
-                tallying up of the upper and lower sections as well as the overall
-                score.
+                This is a digital version of the scoresheet that each player uses to keep track of their score while palying Yahtzee.                
+                The scorecard automates the tallying up of the upper and lower sections as well as the overall score.
             </p>
             <p>
                 This is an all vanilla HTML/CSS/JS project and the source code can be found on Github
@@ -54,7 +49,7 @@
             </p>
             <a class="link-block" href="/yahtzee-scorecard/">Go To Yahtzee Scorecard</a>
             <a href="./images/Yahtzee_Scorecard.PNG">
-                <img src="./images/Yahtzee_Scorecard.PNG" alt="Yahtzee Scorecard" height="500px">
+                <img src="./images/Yahtzee_Scorecard.PNG" alt="Yahtzee Scorecard" height="600px">
             </a>
         </section>
         <div class="clr"></div>
@@ -62,17 +57,16 @@
         <section id="skullking-main">
             <h2>Skull King Scorecard</h2>
             <p>
-                The Skull King Scorecard is a digital version of the scoring sheet that comes with the card game Skull
-                King. The scoresheets are setup so that typically one person is keeping score for all players which can
-                be tricky and tedious given the various scoring rules in the game. This scorecard simplifies much of the
-                process resulting in only the tricks, bids, and bonus points needing to be kept track of. The scoring
-                rules are then applied automatically for each round. A total for each player is kept at the top as well
-                for easy reference.
+                Scorekeeping in Skull King was somewhat tedious when just using pen and paper as one person needed to write down multiple pieces of info for each player on each round.
+                This combined with a number of different scoring rules depending on bids, tricks taken, and special cards meant it was easy to end up with small scoring errors at the end of a round.
+                The scorecard here just needs a few taps each round from the scorekeeper to keep track of each player's bid, tricks taken, and any bonus points.
+                Scores are then updated automatically when moving to the next round.
+                The players can also use the app to see their opponents bid for the current round, everyones overall scores, as well as round by round score information.
             </p>
             <p>
-                The Skull King Scorecard was made using React for the front-end and ExpressJS for the backend. Github
-                Links:
-                <a href="https://github.com/treyturley/sk-scorecard-react">UX</a>,
+                The Skull King Scorecard was made using React for the front-end and ExpressJS for the backend.                
+                Source code for each is on Github.
+                <a href="https://github.com/treyturley/sk-scorecard-react">UX</a> /
                 <a href="https://github.com/treyturley/sk-scorecard-api">API</a>
             </p>
             <a class="link-block" href="/skullking-scorecard">Go To Skull King Scorecard</a>
@@ -90,7 +84,7 @@
                     </a>
                 </figure>
                 <figure>
-                    <figcaption>Player Score Details</figcaption>
+                    <figcaption>Player View with Round Details</figcaption>
                     <a href="./images/SkullKingv2_Player_Expanded.PNG">
                         <img src="./images/SkullKingv2_Player_Expanded.PNG" alt="Yahtzee Scorecard" height="850px">
                     </a>
@@ -102,19 +96,30 @@
         <section id="fsejobfinder-main">
             <h2>FSE Job Finder</h2>
             <p>
-                FSE Job Finder is a tool that utilizes the <a href="https://www.fseconomy.net/welcome">FSEconomy API</a>
-                to find available jobs in the FSE game world. To use the app, the user must have a FSEconomy account and
-                they will also need to have their User Access Key. This key is used to authenticate requests made to the
-                FSEconomy API.
+                FSE Job Finder is a tool that utilizes the API provided by
+                <a href="https://server.fseconomy.net/index.jsp">FSEconomy</a> to find available jobs in the FSE game world.
+                To use the app, the user must have a FSEconomy account and they will also need to have their User Access Key.
+                This key is used to authenticate requests made to the FSEconomy API.                
+                More info on what FSEconomy is and how it works can be found in the
+                <a href="https://sites.google.com/site/fseoperationsguide/#h.egdoiw62qavs">FSEconomy User Manual</a>.
             </p>
             <p>
-                The front-end was made using React and the back-end is an ASP.NET Web API. Github links:
-                <a href="https://github.com/treyturley/fsejobfinder-react">UX</a>,
-                <a href="https://github.com/treyturley/FSEJobFinder">API</a>
+                The front-end for FSE Job Finder was made using React and the back-end is an ASP.NET Web API.
+                The api makes use of another project called FSEDataFeed that I had started working on last year.
+                FSEDataFeed makes the calls to the FSEconomy
+                <a href="https://sites.google.com/site/fseoperationsguide/data-feeds">
+                    Data Feeds API
+                </a>
+                and processes aircraft and assignment information to build out the list of available flights in the game world for a given aircraft.
+                As with the other projects, all source code is up on Github.
+                <a href="https://github.com/treyturley/fsejobfinder-react">UX</a> /
+                <a href="https://github.com/treyturley/FSEJobFinder/tree/dev/FSEJobFinder/FSEDataFeedAPI">.NET Web API</a> /
+                <a href="https://github.com/treyturley/FSEJobFinder/tree/dev/FSEJobFinder/FSEDataFeed">FSEDataFeed</a>
             </p>
             <a class="link-block" href="/fse-job-finder">Go To FSE Job Finder</a>
             <a href="./images/FSEJobFinder.PNG">
-                <img src="./images/FSEJobFinder.PNG" alt="FSE JobFinder" height="850px">
+                <img class="full-image" src="./images/FSEJobFinder.PNG" alt="FSE JobFinder">
+                <img class="mobile-image" src="./images/FSEJobFinder_mobile.PNG" alt="FSE JobFinder Mobile">
             </a>
         </section>
         <div class="clr"></div>

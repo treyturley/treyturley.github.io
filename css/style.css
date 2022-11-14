@@ -1,4 +1,14 @@
+html{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     background-color: #f4f4f4;
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,11 +17,21 @@ body {
     margin: 0;
 }
 
-.container{
+h3{
+    margin: 0;
+}
+
+.title{
     width: 80%;
     margin: auto;
-    /* no scrollbar even if something is outside the container */
-    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    width: 80%;
+    margin: auto;
 }
 
 /* used to clear a float. place after content that has been floated */
@@ -28,7 +48,6 @@ body {
 #navbar{
     background-color: #333;
     color: white;
-    /* height: 50px; */
 }
 
 #navbar ul{
@@ -48,24 +67,33 @@ body {
 }
 
 #main{
-    width: 40%;
+    width: 60%;
     float: none;
 }
 
 #main-footer{
+    display: flex;
+    flex-shrink: 0;
     background: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-/* making more responsive */
+#main-footer ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#main-footer a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
 @media(max-width:600px){
-    /* any styles in here are only in effect if screen width is under 600 pixels */
-
-    /* lets remove floats and change width */
-
     #main{
         width: 100%;
         float: none;

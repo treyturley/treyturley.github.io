@@ -2,6 +2,10 @@ p{
     width: 60%;
 }
 
+figure{
+    margin: 0px 20px 0px 0px;
+}
+
 .figure-inline{
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +13,15 @@ p{
 
 .link-block{
     display: block;
+}
+
+.full-image{
+    display: block;
+    height: 850px;
+}
+
+.mobile-image{
+    display: none;
 }
 
 @media(max-width:600px){
@@ -19,7 +32,25 @@ p{
 
     img{
         max-height: 550px;
-        max-width: 390px;
+        max-width: 310px;
         object-fit: contain;
+    }
+
+    .full-image{
+        display: none;
+    }
+
+    .mobile-image{
+        display: block;
+    }
+}
+
+@media(max-height: 400px){
+    .full-image{
+        display: none;
+    }
+
+    .mobile-image{
+        display: block;
     }
 }
